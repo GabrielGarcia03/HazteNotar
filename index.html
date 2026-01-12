@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -17,6 +18,12 @@
       color: #fff;
       padding: 20px;
       text-align: center;
+    }
+
+    .logo {
+      width: 180px;
+      margin: 0 auto 10px auto;
+      display: block;
     }
 
     .container {
@@ -42,7 +49,7 @@
     .card img {
       width: 100%;
       height: 150px;
-      object-fit: contain;   /* <- NO se deforman */
+      object-fit: contain;
       background: #fff;
       border-radius: 8px;
     }
@@ -72,34 +79,78 @@
       padding: 15px;
       color: #666;
     }
+    .mayorista {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #000;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+      text-decoration: none;
+      font-size: 14px;
+    } 
+
+    .mayorista:hover {
+     background: #ffa726;
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>HazteNotar</h1>
-  <p>Tazas y polos personalizados</p>
+  <img src="logo.png" alt="HazteNotar logo" class="logo">
+  <p>Tu marca, imposible de ignorar</p>
 </header>
 
 <div class="container">
 
-  <!-- Producto 1 -->
   <div class="card">
-    <img src="taza.jpg" alt="Taza personalizada">
-    <h3>Taza personalizada</h3>
+    <img src="tazablanca11.jpg" alt="Taza Blanca 11oz">
+    <h3>Taza Blanca 11oz</h3>
+    <p class="price">S/ 15</p>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
+      Pedir por WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="tazablanca15.jpg" alt="Taza Blanca 15oz">
+    <h3>Taza Blanca 15oz</h3>
+    <p class="price">S/ 20</p>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
+      Pedir por WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="tazamagica11.jpg" alt="Taza magica 11oz">
+    <h3>Taza Mágica 11oz</h3>
     <p class="price">S/ 25</p>
     <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
       Pedir por WhatsApp
     </a>
   </div>
 
-  <!-- Producto 2 -->
   <div class="card">
-    <img src="polo.jpg" alt="Polo personalizado">
-    <h3>Polo sublimado</h3>
-    <p class="price">S/ 45</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20un%20polo%20personalizado">
+    <img src="tazamagica15.jpg" alt="Taza magica 15oz">
+    <h3>Taza Mágica 15oz</h3>
+    <p class="price">S/ 30</p>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
+      Pedir por WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="tazacolor11.jpg" alt="Taza color 11oz">
+    <h3>Taza Color 11oz</h3>
+    <p class="price">S/ 18</p>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
       Pedir por WhatsApp
     </a>
   </div>
@@ -109,7 +160,8 @@
 <footer>
   © 2026 HazteNotar - Perú
 </footer>
-
+    <a class="mayorista" href="https://wa.me/51921825366?text=Hola,%20quiero%20cotizar%20al%20por%20mayor">
+  🔔 Cotiza al por mayor
+</a>
 </body>
 </html>
-
