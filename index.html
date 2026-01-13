@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -79,6 +78,8 @@
       padding: 15px;
       color: #666;
     }
+
+    /* BOTÓN MAYORISTA */
     .mayorista {
       position: fixed;
       bottom: 20px;
@@ -92,11 +93,44 @@
       z-index: 9999;
       text-decoration: none;
       font-size: 14px;
-    } 
+    }
 
     .mayorista:hover {
-     background: #ffa726;
+      background: #333;
     }
+
+    /* BENEFICIOS */
+    .beneficios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 40px;
+    }
+
+    .beneficio {
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .beneficio h3 {
+      margin: 15px 0 10px;
+      letter-spacing: 2px;
+    }
+
+    .beneficio p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .b1 { background: #9c3f97; }
+    .b2 { background: #3f3f3f; }
+    .b3 { background: #f2f2f2; color: #000; }
+    .b4 { background: #9c3f97; }
 
   </style>
 </head>
@@ -111,58 +145,80 @@
 <div class="container">
 
   <div class="card">
-    <img src="tazablanca11.jpg" alt="Taza Blanca 11oz">
+    <img src="tazablanca11.jpg">
     <h3>Taza Blanca 11oz</h3>
     <p class="price">S/ 15</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
-      Pedir por WhatsApp
-    </a>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20blanca%20de%2011oz%20personalizada">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
-    <img src="tazablanca15.jpg" alt="Taza Blanca 15oz">
+    <img src="tazablanca15.jpg">
     <h3>Taza Blanca 15oz</h3>
     <p class="price">S/ 20</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
-      Pedir por WhatsApp
-    </a>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20blanca%20de%2015oz%20personalizada">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
-    <img src="tazamagica11.jpg" alt="Taza magica 11oz">
+    <img src="tazamagica11.jpg">
     <h3>Taza Mágica 11oz</h3>
     <p class="price">S/ 25</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
-      Pedir por WhatsApp
-    </a>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20mágica%20de%2011oz%20personalizada">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
-    <img src="tazamagica15.jpg" alt="Taza magica 15oz">
+    <img src="tazamagica15.jpg">
     <h3>Taza Mágica 15oz</h3>
     <p class="price">S/ 30</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
-      Pedir por WhatsApp
-    </a>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20mágica%20de%2015oz%20personalizada">Pedir por WhatsApp</a>
   </div>
 
   <div class="card">
-    <img src="tazacolor11.jpg" alt="Taza color 11oz">
+    <img src="tazacolor11.jpg">
     <h3>Taza Color 11oz</h3>
     <p class="price">S/ 18</p>
-    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20personalizada">
-      Pedir por WhatsApp
-    </a>
+    <a class="btn" href="https://wa.me/51921825366?text=Hola,%20quiero%20una%20taza%20con%20color%20interior%20de%2011oz%20personalizada">Pedir por WhatsApp</a>
   </div>
 
 </div>
 
+<section class="beneficios">
+
+  <div class="beneficio b1">
+    <div class="icon">🏅</div>
+    <h3>CALIDAD ASEGURADA</h3>
+    <p>Todos nuestros productos cuentan con la mejor calidad del mercado.</p>
+  </div>
+
+  <div class="beneficio b2">
+    <div class="icon">💰</div>
+    <h3>PRECIOS INSUPERABLES</h3>
+    <p>Las mejores ofertas y promociones del mercado.</p>
+  </div>
+
+  <div class="beneficio b3">
+    <div class="icon">📦</div>
+    <h3>ENTREGAS A NIVEL NACIONAL</h3>
+    <p>Envíos rápidos y seguros a todo el Perú.</p>
+  </div>
+
+  <div class="beneficio b4">
+    <div class="icon">💬</div>
+    <h3>CONSULTAS</h3>
+    <p>Atención personalizada y rápida.</p>
+  </div>
+
+</section>
+
 <footer>
   © 2026 HazteNotar - Perú
 </footer>
-    <a class="mayorista" href="https://wa.me/51921825366?text=Hola,%20quiero%20cotizar%20al%20por%20mayor">
+
+<a class="mayorista" href="https://wa.me/51921825366?text=Hola,%20quiero%20cotizar%20al%20por%20mayor">
   🔔 Cotiza al por mayor
 </a>
+
 </body>
 </html>
+
+
 
